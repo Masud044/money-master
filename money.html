@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+        <header>
+             <h1 class="text-center font-bold text-4xl text-emerald-500 mt-20">Money master</h1>
+        </header>
+        <main class="mt-20">
+              
+                      <div class="bg-gray-300 text-center w-4/12 mx-auto drop-shadow-2xl">
+                          <h2 class="font-medium text-2xl mb-6 text-black" >Income</h2>
+                         
+                          <form action="/action_page.php">
+                            <label for="fname">Income:</label>
+                            <input type="text" id="income" name="fname" class="py-2 rounded-md" ><br><br>
+                           
+                          </form>
+                          <h1 class="font-medium text-2xl mb-6 text-black">Expenses</h1>
+                          <form action="/action_page.php">
+                            <label for="fname">Food:</label>
+                            <input  type="text" id="food" name="fname" class="py-2 rounded-md" ><br><br>
+                            <label for="fname">Rent:</label>
+                            <input type="text" id="rent" name="fname" class="py-2 rounded-md" ><br><br>
+                            <label for="fname">Cloths: </label>
+                            <input type="text" id="cloths" name="fname" class="py-2 rounded-md"><br><br>
+                           
+                          </form>
+                          <button id="calculate" class="bg-sky-500/100 px-16 py-3 rounded-md text-white">calculate</button>
+                          <h1  class="font-medium text-2xl mt-6 text-black">Total Expenses: <span id="total-expen" ></span></h1>
+                          <h3  class="font-medium text-2xl mt-6 mb-6 text-black">Balance : <span id="balance" ></span></h3>
+                         
+                         
+                            <label for="fname">save:</label>
+                            <input type="text" id="parsent" name="fname" class="py-2 rounded-md"> %<br><br>
+                           
+                          <button id="savebtn" class="bg-sky-500/100 px-10 py-3 rounded-md text-white">save</button>
+                           
+                         <h1  class="font-medium text-2xl mb-6 text-black mt-10">saving amount : <span id="save"></span></h1>
+                          <h1  class="font-medium text-2xl mb-6 text-black">remaining Balance: <span id="remaining"></span></h1>
+                            
+                         
+                      </div>
+              
+        </main>
+        <script src="js/money.js"></script>
+</body>
+</html>
